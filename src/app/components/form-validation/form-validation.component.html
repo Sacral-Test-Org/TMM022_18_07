@@ -1,0 +1,28 @@
+<!-- src/app/components/form-validation/form-validation.component.html -->
+
+<div *ngIf="formGroup">
+  <div *ngFor="let control of formGroup.controls | keyvalue">
+    <div *ngIf="control.value.errors && (control.value.dirty || control.value.touched)">
+      <div *ngIf="control.value.errors.required">
+        <p class="error-message">{{ control.key }} is required.</p>
+      </div>
+      <div *ngIf="control.value.errors.minlength">
+        <p class="error-message">{{ control.key }} must be at least {{ control.value.errors.minlength.requiredLength }} characters long.</p>
+      </div>
+      <div *ngIf="control.value.errors.maxlength">
+        <p class="error-message">{{ control.key }} cannot be more than {{ control.value.errors.maxlength.requiredLength }} characters long.</p>
+      </div>
+      <div *ngIf="control.value.errors.pattern">
+        <p class="error-message">{{ control.key }} is invalid.</p>
+      </div>
+      <!-- Add more validation messages as needed -->
+    </div>
+  </div>
+</div>
+
+<style>
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+</style>

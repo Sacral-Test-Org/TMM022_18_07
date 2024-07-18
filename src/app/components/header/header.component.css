@@ -1,0 +1,19 @@
+/* Styling for the system date */
+.sysdate {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+/* Styling for the screen name */
+.screenname {
+  /* Default styling */
+  text-transform: uppercase;
+  color: #333;
+}
+
+/* Hint styling for screen name */
+.screenname::after {
+  content: " PRESS <RETURN> TO RUN NEW FORM <F6> TO RUN NEW FORM AND RETURN BACK";
+  font-size: 0.8em;
+  color: #999;
+}

@@ -1,0 +1,38 @@
+/* src/app/components/unit-id/unit-id.component.css */
+
+/* Style for the Unit ID field */
+.unit-id-field {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style for the label of the Unit ID field */
+.unit-id-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Style for the container of the Unit ID field */
+.unit-id-container {
+  margin: 20px 0;
+}
+
+/* Style for error messages related to the Unit ID field */
+.unit-id-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Style for the Unit ID field when it is focused */
+.unit-id-field:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}

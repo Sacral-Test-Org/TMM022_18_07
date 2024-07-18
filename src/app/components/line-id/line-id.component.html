@@ -1,0 +1,48 @@
+<div class="line-id-container">
+  <form>
+    <div class="form-group">
+      <label for="lineId">Line ID</label>
+      <input
+        type="text"
+        id="lineId"
+        name="lineId"
+        class="form-control"
+        (dblclick)="onLineIdDoubleClick()"
+        (click)="onLineIdClick()"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="partNumber">Part Number</label>
+      <input
+        type="text"
+        id="partNumber"
+        name="partNumber"
+        class="form-control"
+      />
+    </div>
+
+    <!-- Add other fields here as needed -->
+    <div class="form-group">
+      <label for="otherField1">Other Field 1</label>
+      <input
+        type="text"
+        id="otherField1"
+        name="otherField1"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="otherField2">Other Field 2</label>
+      <input
+        type="text"
+        id="otherField2"
+        name="otherField2"
+        class="form-control"
+      />
+    </div>
+
+    <button type="button" class="btn btn-primary" (click)="onSave()">Save</button>
+  </form>
+</div>

@@ -1,0 +1,13 @@
+<div class="button-container">
+  <!-- Save Button -->
+  <button (click)="onSaveClick()">Save</button>
+
+  <!-- Clear Button -->
+  <button id="clearButton" (click)="clearForm()">CLR</button>
+
+  <!-- Edit Button -->
+  <button (click)="handleEditButtonClick()" [disabled]="isEditDisabled">Edit</button>
+
+  <!-- Exit Button -->
+  <button (click)="onExitClick()">EXIT</button>
+</div>

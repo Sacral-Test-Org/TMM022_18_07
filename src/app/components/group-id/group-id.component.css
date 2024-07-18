@@ -1,0 +1,49 @@
+/* Styles for Group ID field */
+.group-id-field {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Styles for Group ID field on focus */
+.group-id-field:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* Styles for List of Values (LOV) */
+.lov-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.lov-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.lov-dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.lov-dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on focus */
+.group-id-field:focus + .lov-dropdown {
+  display: block;
+}
